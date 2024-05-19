@@ -12,3 +12,34 @@ Do a `GET` request to your cloud function with a input `012937`, `2` and `999999
 
 ### Part 3: Adding a collaborator to your Cloud function
 Add your professor as a collaborator to your cloud function via the IAM page.
+
+## How to test?
+
+Create new conda environment.
+
+```bash
+conda create --my-first-gcf --clone base
+```
+
+Then, activate the new environment:
+
+```bash
+conda activate my-first-gcf
+```
+
+Now, install the required packages:
+
+```bash
+pip install functions-framework flask
+```
+Move to this folder and run:
+
+```bash
+functions-framework --target first_cloud_function --debug
+```
+
+Then run the testing script in `./test/first_function.py`
+
+```bash
+python ./test/first_function.py
+```
