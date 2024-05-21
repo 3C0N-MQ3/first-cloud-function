@@ -46,7 +46,7 @@ def sum_numbers(data: str) -> str:
     
     numbers = ''.join(re.findall(r'\d+', data))
     if numbers == '':
-        return 'No numbers received. Testing new buid...'
+        return 'No numbers received. Testing new build...'
     
     result = sum([int(x) for x in numbers])
     
