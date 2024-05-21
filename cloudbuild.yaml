@@ -1,0 +1,5 @@
+steps:
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['functions', 'deploy', 'first_cloud_function', '--entry-point', 'first_cloud_function', '--runtime', 'python39', '--trigger-http', '--source', '.']
+
+timeout: '540s'
