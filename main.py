@@ -19,7 +19,7 @@ def first_cloud_function(request: flask.Request) -> flask.typing.ResponseReturnV
     - If the request method is neither 'GET' nor 'POST', returns a 405 status code indicating the method is unsupported.
     """
     if request.method == 'GET':
-        return 'Not implemented yet...', 501
+        return 'Not implemented yet. Check later...', 501
     elif request.method == 'POST':
         return sum_numbers(request.data.decode("utf-8"))
     else:
